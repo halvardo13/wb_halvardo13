@@ -1,0 +1,171 @@
+
+//Define variables
+$bg_col: #a480a9;
+$bg_col2: #774c71;
+$bg_col3: #986e92;
+$text_color: #452847;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+
+body {
+    font-size: 32px;
+    background: $bg_col;
+
+    font-family: 'Oswald', sans-serif;
+    color: $text_color;
+
+    text-align: center;
+
+    margin: .1em;
+    border: 5px solid $bg_col2;
+}
+
+
+span:hover {
+    color: #d6bfb1;   
+}
+a {
+    text-decoration: none;
+    color: $text_color;
+}
+
+.hero {
+    display: block;
+
+    display: flex;
+    justify-content: center;
+
+
+
+    text-align: center;
+    letter-spacing: .1em;
+    font-weight: bold;
+    text-transform: uppercase;
+
+
+
+    h1 {
+        padding: .2em;
+        border: 5px solid $bg_col2;
+        box-shadow: .2em .2em $bg_col2;
+
+        background-image: url("../SVG/blob.svg");
+        background-repeat: no-repeat;
+        background-position: right; 
+
+        position: relative;
+    }
+    span {
+        cursor: default;
+    }
+}
+
+//Bounce animation
+@keyframes bounce {
+    25% {
+        transform: scale(0.65, 1.2);
+    }
+    50% {
+        transform: scale(1.2, 0.7);
+    }
+}
+.bounce {
+    display: inline-block;
+    transform-origin: center;
+}
+.bounce:hover {
+    animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+    animation-name: bounce;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+
+
+
+
+.game-holder {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.wb-holder {
+    border: 5px solid $bg_col2;
+    box-shadow: .2em .2em $bg_col2;   
+    
+    margin: 1em;
+
+    display: flex;
+    justify-content: center;
+
+
+
+    background-image: url("../SVG/blob_2.svg");
+    background-repeat: no-repeat;
+    background-position: center; 
+
+    ul {
+        list-style-type: none;
+    }
+
+    li:hover {
+        cursor: pointer;
+        transform: skew(5deg);
+        border-bottom: 5px solid $bg_col2;
+    }
+}
+
+
+
+.game-holder {
+    display: flex;
+
+
+}
+
+.game-entry {
+    border: 5px solid $bg_col2;
+    box-shadow: .2em .2em $bg_col2;  
+    height: fit-content;
+
+    margin: .2em;
+    transition: .5s ease;
+    text-align: center;
+
+    p {
+        position: absolute;
+        opacity: 0;
+    }
+}
+.game-entry:hover {
+    opacity: .3;
+
+    p {
+        opacity: 1;
+    }
+}
+
+
+.links {
+    ul {
+        list-style-type: none;
+    }
+}
+
+
+button {
+    transform-origin: center;
+    border-radius: .5em;
+    border: none;
+    background-color: $bg_col2;
+    color: $bg_col;
+
+    height: 32px;
+    width: 100px;
+}
+button:hover {
+    cursor: pointer;
+}

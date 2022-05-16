@@ -1,0 +1,206 @@
+
+
+
+//Define variables
+$navbarItemsMargin: .3em;
+$navbarBorderSize: 4px;
+
+$bgColor: #f2f2f2;
+$navColor: #ffffff;
+
+
+body {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: $bgColor;
+}
+ul {
+    list-style-type: none;
+}
+
+
+.navbar {
+    background-color: $navColor;
+    margin: 0;
+    border-bottom: $navbarBorderSize solid rgba($color: darkgrey, $alpha: .3);
+    text-align: center;
+    text-transform: uppercase;
+    //overflow: hidden;
+    
+
+    //Flex
+    display: flex;
+    justify-content: space-between;
+
+
+    a {
+        margin-bottom: 0;
+        margin-top: 1em;
+        margin-left: 1em;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+
+    }
+    a:hover {
+        color: green;
+    }
+    span {
+        color: green;
+    }
+    
+
+
+}
+.main-nav {
+    font-weight: bold;
+    //Define list
+    margin-top: 1em;
+    margin-bottom: 0;
+    list-style-type: none;
+    height: 1.1em;
+    li {
+        text-align: center;
+        display: block;
+        float: left;
+        margin-right: $navbarItemsMargin;
+        margin-left: $navbarItemsMargin;
+
+        //Text
+        cursor: pointer;
+    }
+    li:hover {
+        border-bottom: $navbarBorderSize solid #e6a420;
+        color: green;
+    }
+
+}
+
+
+
+.hero {
+    margin: 0;
+    font-weight: normal;
+    text-align: center;
+
+
+    h1 {
+        font-size: 3.2em;
+        color: green;
+    }
+    h2 {
+        font-size: 2em;
+        letter-spacing: .4em;
+        color: grey;
+    }
+}
+
+hr {
+    margin-right: 30%;
+    margin-left: 30%;
+    height: 4px;
+    background: grey;
+    border-color: grey;
+    border-style: solid;
+    border-radius: 4px;
+}
+.dowload-cta {
+    text-align: center;
+    color: grey;
+    font-weight: bold;
+
+    //Style download button
+    button {
+        margin: .2em;
+        background: green;
+        border-color: green;
+        border-style: solid;
+        border-radius: 64px;
+        font-size: 1.4em;
+        color: $bgColor;
+        padding: .6em 2em;
+        display: inline-block;
+        font-weight: bold;
+        
+        cursor: pointer;
+    }
+    button:hover {
+        background: $bgColor;
+        color: green;
+    }
+}
+
+
+.down-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.features {
+    display: flex;
+    align-items: center;
+    //justify-content: center;
+    flex-direction: column;
+    margin: .5em;
+
+    h1 {
+        font-size: 3.2em;
+        color: green;
+        font-weight: bold;
+        
+    }
+    a {
+        margin-top: 1em;
+        text-align: center;
+        border: 2px solid green;
+        border-radius: 50%;
+        text-decoration: none;
+        color: green;
+
+        font-size: 1.4em;
+        padding-right: .3em;
+        padding-left: .3em;
+    }
+    a:hover {
+        color: $bgColor;
+        background: green;
+    }
+}
+
+
+
+.slider-container {
+    border: 4px solid green;
+    margin-bottom: 6px;
+
+    width: 300px;
+    height: 300px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    background-color: $navColor;
+
+    border-radius: 10%;
+
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
+    .slider-item {
+        padding-top: 32px;
+        flex: 0 0 300px;
+        width: 300px;
+        display: inline-flex;
+        justify-content: center;
+        //align-items: center;
+        scroll-snap-align: start;
+        background: $bgColor;
+
+        color: green;
+
+        font-size: 1.4em;
+        font-weight: bold;
+
+    }
+}

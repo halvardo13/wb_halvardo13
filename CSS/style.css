@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+body {
+  font-size: 32px;
+  background: #a480a9;
+  font-family: 'Oswald', sans-serif;
+  color: #452847;
+  text-align: center;
+  margin: .1em;
+  border: 5px solid #774c71;
+}
+
+span:hover {
+  color: #d6bfb1;
+}
+
+a {
+  text-decoration: none;
+  color: #452847;
+}
+
+.hero {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  letter-spacing: .1em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  padding: .2em;
+  border: 5px solid #774c71;
+  -webkit-box-shadow: 0.2em 0.2em #774c71;
+          box-shadow: 0.2em 0.2em #774c71;
+  background-image: url("../SVG/blob.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  position: relative;
+}
+
+.hero span {
+  cursor: default;
+}
+
+@-webkit-keyframes bounce {
+  25% {
+    -webkit-transform: scale(0.65, 1.2);
+            transform: scale(0.65, 1.2);
+  }
+  50% {
+    -webkit-transform: scale(1.2, 0.7);
+            transform: scale(1.2, 0.7);
+  }
+}
+
+@keyframes bounce {
+  25% {
+    -webkit-transform: scale(0.65, 1.2);
+            transform: scale(0.65, 1.2);
+  }
+  50% {
+    -webkit-transform: scale(1.2, 0.7);
+            transform: scale(1.2, 0.7);
+  }
+}
+
+.bounce {
+  display: inline-block;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+.bounce:hover {
+  -webkit-animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+          animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+.game-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wb-holder {
+  border: 5px solid #774c71;
+  -webkit-box-shadow: 0.2em 0.2em #774c71;
+          box-shadow: 0.2em 0.2em #774c71;
+  margin: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("../SVG/blob_2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.wb-holder ul {
+  list-style-type: none;
+}
+
+.wb-holder li:hover {
+  cursor: pointer;
+  -webkit-transform: skew(5deg);
+          transform: skew(5deg);
+  border-bottom: 5px solid #774c71;
+}
+
+.game-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.game-entry {
+  border: 5px solid #774c71;
+  -webkit-box-shadow: 0.2em 0.2em #774c71;
+          box-shadow: 0.2em 0.2em #774c71;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: .2em;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  text-align: center;
+}
+
+.game-entry p {
+  position: absolute;
+  opacity: 0;
+}
+
+.game-entry:hover {
+  opacity: .3;
+}
+
+.game-entry:hover p {
+  opacity: 1;
+}
+
+.links ul {
+  list-style-type: none;
+}
+
+button {
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  border-radius: .5em;
+  border: none;
+  background-color: #774c71;
+  color: #a480a9;
+  height: 32px;
+  width: 100px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
