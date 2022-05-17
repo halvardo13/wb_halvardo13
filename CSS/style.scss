@@ -1,171 +1,66 @@
+$col1: #e0d4ce;
+$col2: #21498a;
 
-//Define variables
-$bg_col: #a480a9;
-$bg_col2: #774c71;
-$bg_col3: #986e92;
-$text_color: #452847;
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
-
+* {
+    font-size: 64px;
+    font-family: 'Fredoka One', cursive;
+    margin-left: 32px;
+}
 body {
-    font-size: 32px;
-    background: $bg_col;
-
-    font-family: 'Oswald', sans-serif;
-    color: $text_color;
-
-    text-align: center;
-
-    margin: .1em;
-    border: 5px solid $bg_col2;
+    background: $col1;
 }
 
+.logo {
+    text-align: left;
+    width: 400px;
+    background: $col2;
 
-span:hover {
-    color: #d6bfb1;   
-}
-a {
-    text-decoration: none;
-    color: $text_color;
-}
-
-.hero {
-    display: block;
-
-    display: flex;
-    justify-content: center;
-
-
-
-    text-align: center;
-    letter-spacing: .1em;
-    font-weight: bold;
-    text-transform: uppercase;
-
-
-
+    color: $col1;
     h1 {
-        padding: .2em;
-        border: 5px solid $bg_col2;
-        box-shadow: .2em .2em $bg_col2;
-
-        background-image: url("../SVG/blob.svg");
-        background-repeat: no-repeat;
-        background-position: right; 
-
-        position: relative;
-    }
-    span {
-        cursor: default;
-    }
-}
-
-//Bounce animation
-@keyframes bounce {
-    25% {
-        transform: scale(0.65, 1.2);
-    }
-    50% {
-        transform: scale(1.2, 0.7);
-    }
-}
-.bounce {
-    display: inline-block;
-    transform-origin: center;
-}
-.bounce:hover {
-    animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
-    animation-name: bounce;
-    animation-duration: 0.5s;
-    animation-iteration-count: 1;
-}
-
-
-
-
-.game-holder {
-    display: flex;
-    justify-content: center;
-}
-
-
-
-.wb-holder {
-    border: 5px solid $bg_col2;
-    box-shadow: .2em .2em $bg_col2;   
-    
-    margin: 1em;
-
-    display: flex;
-    justify-content: center;
-
-
-
-    background-image: url("../SVG/blob_2.svg");
-    background-repeat: no-repeat;
-    background-position: center; 
-
-    ul {
-        list-style-type: none;
-    }
-
-    li:hover {
-        cursor: pointer;
-        transform: skew(5deg);
-        border-bottom: 5px solid $bg_col2;
+        font-size: .5em;
     }
 }
 
 
-
-.game-holder {
-    display: flex;
+.outline-txt {
+    -webkit-text-stroke: 1px $col2;
+    -webkit-text-fill-color: $col1;
+    font-size: .75em;
 
 
 }
-
-.game-entry {
-    border: 5px solid $bg_col2;
-    box-shadow: .2em .2em $bg_col2;  
-    height: fit-content;
-
-    margin: .2em;
-    transition: .5s ease;
-    text-align: center;
-
-    p {
-        position: absolute;
-        opacity: 0;
-    }
-}
-.game-entry:hover {
-    opacity: .3;
-
-    p {
-        opacity: 1;
-    }
-}
-
-
 .links {
-    ul {
-        list-style-type: none;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+
+
+    .link-to {
+        cursor: pointer;
+        margin-top: 32px;
+        width: 600px;
+        background: $col1;
+        border-style: none;
+        color: $col2;
+        text-align: left;
+
+        a {
+            font-size: 48px;
+            text-decoration: none;
+            color: $col2;
+        }
+        transition: .5s;
+    }
+    .link-to:hover {
+        background: $col2;
+        color: $col1;
     }
 }
 
-
-button {
-    transform-origin: center;
-    border-radius: .5em;
-    border: none;
-    background-color: $bg_col2;
-    color: $bg_col;
-
-    height: 32px;
-    width: 100px;
-}
-button:hover {
-    cursor: pointer;
+.links-wrapper {
+    display: flex;
 }
