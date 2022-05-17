@@ -1,0 +1,153 @@
+$bgColor: #262626;
+$navColor: #080808;
+$red1: #a53030;
+$red2: #752438;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+}
+body {
+    background: $bgColor;
+    color: white;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+.logo {
+    text-decoration: underline $red1 3px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.nav-wrapper {
+    background: $navColor;
+    display: flex;
+    justify-content: space-between;
+
+    height: 100px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+.nav {
+    margin: 16px;
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+
+
+    ul {
+        list-style-type: none;
+    }
+    li {
+        font-weight: bold;
+        float: left;
+        margin: 10px;
+        cursor: pointer;
+        svg {
+            fill: white;
+            transition: .1s;
+        }
+        svg:hover {
+            fill: $red1;
+        }
+    }
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content a {
+    display: block;
+    text-decoration: none;
+}
+
+
+.game-section {
+    margin: 64px;
+    margin-right: 0;
+    margin-top: 250px;
+
+    h1 {
+        cursor: default;
+    }
+}
+.game-container {
+    display: flex;
+    justify-content: start;
+    position: absolute;
+    //flex-wrap: wrap;
+
+
+    img {
+        margin: 4px;
+        width: 25%;
+        height: 25%;
+
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: .4s;
+        opacity: .7;
+    }
+    img:hover {
+        opacity: 1;
+        width: 26%;
+    }
+}
+
+
+footer {
+    margin: 400px;
+    margin-top: 300px;
+    margin-bottom: 32px;
+    color: #bdbdbd;
+    display: flex;
+    justify-content: space-between;
+    ul {
+        list-style-type: none;
+    }
+    li {
+        margin: 10px;
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//underline animation from: https://www.30secondsofcode.org/css/s/hover-underline-animation
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+
+  }
+  
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: $red1;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
