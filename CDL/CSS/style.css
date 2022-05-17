@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Akshar:wght@500&display=swap");
+* {
+  font-family: 'Akshar', sans-serif;
+  margin: 0;
+}
+
+body {
+  text-align: center;
+}
+
+.standings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.standings img {
+  width: 32px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+}
+
+td, th {
+  border-bottom: 2px solid #dddddd;
+  text-align: left;
+  padding: 4px;
+}
+
+.table-main {
+  color: white;
+  background: black;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+tr:hover {
+  background-color: #D6EEEE;
+}
+
+.table-main:hover {
+  background-color: black;
+}
+
+.headline {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.headline span {
+  font-weight: bold;
+}
+
+.team-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.team-logo img {
+  margin-right: 6px;
+}
+
+hr {
+  color: black;
+  border-style: solid;
+}
+
+.info {
+  margin: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.collapsible {
+  cursor: pointer;
+  text-align: left;
+  width: 364px;
+  margin-top: 32px;
+  font-size: 1.4em;
+  border-radius: 0;
+  border-style: none;
+  background: black;
+  color: white;
+  padding: 16px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.collapsible:hover {
+  color: black;
+  background: #dddddd;
+}
+
+.collapseable-text {
+  text-align: left;
+  width: 364px;
+  display: none;
+  background: #dddddd;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.collapseable-text p {
+  margin: 4px;
+}
+/*# sourceMappingURL=style.css.map */
